@@ -49,7 +49,7 @@ namespace LISTING_3_1_Creating_JSON
         {
             MusicTrack track = new MusicTrack(artist: "Rob Miles", title: "My Way", length: 150);
             string json = JsonConvert.SerializeObject(track);
-            Console.Write("JSON: ");
+            Console.Write("JSON of track: ");
             Console.WriteLine(json);
 
             MusicTrack trackRead = JsonConvert.DeserializeObject<MusicTrack>(json);
@@ -67,7 +67,7 @@ namespace LISTING_3_1_Creating_JSON
             }
 
             string jsonArray = JsonConvert.SerializeObject(album);
-            Console.Write("JSON: ");
+            Console.Write("JSON of album: ");
             Console.WriteLine(jsonArray);
 
             List<ShortTrack> albumRead = JsonConvert.DeserializeObject<List<ShortTrack>>(jsonArray);
