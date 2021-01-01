@@ -40,7 +40,7 @@ namespace LISTING_3_2_Creating_XML
 
             string trackXML = serWriter.ToString();
 
-            Console.WriteLine("Track XML");
+            Console.WriteLine("Track XML:");
             Console.WriteLine(trackXML);
 
             TextReader serReader = new StringReader(trackXML);
